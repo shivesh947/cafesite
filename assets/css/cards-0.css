@@ -1,0 +1,289 @@
+.bordered-headline {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  color: #bdbdbd;
+  overflow: hidden;
+  margin: 35px 25px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-top: 3px solid #ac8236;
+  padding-top: 6px;
+}
+
+.bordered-headline * {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+}
+
+.bordered-headline h1, .bordered-headline h5 {
+  margin: 0;
+  line-height: 1em;
+}
+
+.bordered-headline h1 {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  font-size: 2.8em;
+  text-transform: uppercase;
+}
+
+.bordered-headline h5 {
+  line-height: 0.5em;
+  font-weight: 400;
+  display: table;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  padding: 0 10px;
+  font-family: Oranienbaum, serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.bordered-headline h5:before, .bordered-headline h5:after {
+  position: absolute;
+  height: 3px;
+  content: '';
+  background: #ac8236;
+  width: 1000%;
+  top: 50%;
+}
+
+.bordered-headline h5:before {
+  left: -1000%;
+}
+
+.bordered-headline h5:after {
+  right: -1000%;
+}
+
+#featured-models {
+  padding: 50px 0px;
+  background-image: url("../../assets/img/bg-damask-gold.png");
+  background-color: #1c1c1c;
+  background-position: top center;
+  color: #999999;
+  background-attachment: fixed;
+  text-align: center;
+  box-shadow: 0 100px 100px -100px #000 inset;
+  border-top: 8px solid #333;
+}
+
+#featured-models h1 {
+  color: #ffffff;
+}
+
+#featured-models h5 {
+  color: #ac8236;
+}
+
+#featured-models p {
+  margin-bottom: 30px;
+}
+
+.model-card .model-card-content {
+  background: #ffffff;
+  background: -moz-linear-gradient(-45deg,  rgba(96,73,42,1) 0%, rgba(226,203,117,1) 50%, rgba(96,73,42,1) 100%);
+  background: -webkit-linear-gradient(-45deg,  rgba(96,73,42,1) 0%,rgba(226,203,117,1) 50%,rgba(96,73,42,1) 100%);
+  background: linear-gradient(135deg,  rgba(96,73,42,1) 0%,rgba(226,203,117,1) 50%,rgba(96,73,42,1) 100%);
+  border-radius: 3px;
+  bottom: 40px;
+  box-shadow: 0 25px 20px -18px rgba(0, 0, 0, 0.4);
+  height: auto;
+  left: 15%;
+  padding: 8px 5px 5px;
+  position: absolute;
+  right: 15%;
+  text-align: center;
+  pointer-events: none;
+}
+
+.model-card .model-card-content .model-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px #f8df82;
+  margin-top: 0px;
+}
+
+.model-meta {
+  color: #000000;
+  font-size: 12px;
+}
+
+.model-card:hover {
+  box-shadow: none;
+  transition: all .3s;
+}
+
+.model-card:hover img {
+  transform: scale(1.1) translateZ(0) scale(1.0, 1.0);
+  -webkit-backface-visibility: hidden;
+  transition: all .3s;
+}
+
+.model-card {
+  margin-bottom: 60px;
+  border: 3px double #000000;
+  box-shadow: 0 25px 15px -15px rgba(0,0,0,.5);
+  transition: all .3s;
+  background: #444444;
+}
+
+.model-card-image .img-fluid {
+  width: 100% !important;
+  transition: all .3s;
+}
+
+.model-card img:hover {
+  opacity: .6;
+  transition: all .3s;
+}
+
+.model-card-inner {
+  background: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+.model-card:hover .hvr-float-shadow, .model-card:focus .hvr-float-shadow, .model-card:active .hvr-float-shadow {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  box-shadow: none;
+}
+
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #000000;
+}
+
+.ribbon {
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+  color: white;
+  padding: .7em 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(30%) translateY(0%) rotate(45deg);
+  transform-origin: top left;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+  font-family: Georgia;
+}
+
+.ribbon:before, .ribbon:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  margin: 0 -1px;
+  width: 140%;
+  height: 100%;
+}
+
+.ribbon:before {
+  right: 100%;
+}
+
+.ribbon:after {
+  left: 100%;
+}
+
+span.ribbon {
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, .5);
+}
+
+.ribbon, .ribbon:before, .ribbon:after {
+  background: #cc0000;
+  color: #ffffff;
+}
+
+.hvr {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+  transition: all .3s;
+  font-family: Oranienbaum, serif;
+  text-align: center;
+  background: rgba(0,0,0,.5);
+  pointer-events: none;
+  white-space: nowrap;
+  opacity: 0;
+  padding: 5px 15px 3px 15px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,.3);
+}
+
+a.model-card-image:hover .hvr {
+  opacity: 1 !important;
+  transition: all .3s;
+  transform: translate(-50%, -40%);
+}
+
+.model-meta {
+  margin: 0px 15px;
+}
+
