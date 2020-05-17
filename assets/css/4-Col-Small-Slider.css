@@ -250,6 +250,10 @@
   background: rgba(255,0,0,0);
 }
 
-#newcode {
+#newcode img {
+}
+
+#newcode img {
+  height: 21vw;
 }
 
