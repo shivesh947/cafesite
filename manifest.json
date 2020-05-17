@@ -16,6 +16,11 @@
       "src": "/assets/img/logop.PNG",
       "type": "image/png",
       "sizes": "144x144"
+    },
+    {
+      "src": "/assets/img/logo192.PNG",
+      "type": "image/png",
+      "sizes": "192x192"
     }
   ],
   "start_url": "index.html",
